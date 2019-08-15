@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Doctor Xplore</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        
+        <img id="Dx" src="images/10980d38-ec9c-407a-90a9-5f8e5cee72f6_200x200 (2).png">
+        <div id="title">
+            <!-- <h1>DOCTOR Xplore</h1> -->
+        
+        <h3 id="h3R">Sign In!</h3>
+        <!-- <br>+ -->
+        <div id="formDiv"></div>
+            <form id="the_form">
+            
+                Username: <input type="text" placeholder="Username" id="username_textbox">
+                <br><br>
+                Password: <input type="password" placeholder="Password" id="password_textbox">
+                <br>
+                <br>
+                <button id="signButton">Sign in</button>
+                <br>
+                
+            </form>
+        </div>
+
+        <div id="OM">
+            <h2>Our Mission</h2> 
+            <p> "Doctor Xplore", is a website that allows people looking for medical care to filter out the caretaker of their preference. We want people who are need in of medical care to feel the most comfortable with the assistance of their personal choice.</p>     
+        </div>
+
+        <div id="Welcome">
+
+
+
+        <script>
+
+        let signIn = document.getElementById("the_form");
+        let buttonRef = document.getElementById("signButton");
+        let usernameTextbox = document.getElementById("username_textbox");
+        let passwordTextbox = document.getElementById("password_textbox");
+        let mainPage = document.getElementById("Welcome");
+        let h1Ref = document.querySelector("h1");
+        let h3Ref = document.getElementById("h3R");
+        let OMref = document.getElementById("OM");
+        let backG = document.getElementById("docPic");
+        let logo = document.getElementById("Dx");
+
+
+        mainPage.style.display = "none";
+        
+        buttonRef.onclick = function(event) {
+            event.preventDefault();
+
+            let username = usernameTextbox.value;
+            let password = passwordTextbox.value;
+            console.log(username);
+            console.log(password);
+
+            if (username == "Christina" && password == "Lewis") {
+
+                mainPage.style.display = "block";
+
+                signIn.style.display = "none";
+
+                OMref.style.display = "none";
+
+                logo.style.display = "none";
+
+                h3Ref.style.display = "none"; 
+
+                window.location.replace("https://michaelasc6.github.io/DemoDayProject.github.io/");
+
+
+
+                
+            }
+
+        }
+
+        </script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+    
